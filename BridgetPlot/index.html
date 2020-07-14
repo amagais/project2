@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Assistance Food</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/d3Style.css">
+
+</head>
+
+<body>
+  <div class="navigation">
+    <nav class="navbar navbar-expand-lg navbar bg-light">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler float-right border border-white" type="button"  data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Data
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="./data/national_data.html">National Data</a>
+              <a class="dropdown-item" href="./data/IL_data.html">Illinois Data</a>
+            </div>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="../index_main.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/map/index.html">Food Insecurity Map (Illinois)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/D3/index.html">Food Insecurity (Illinois)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/BridgetPlot/index.html">Food Assistance Programs Participation (USA)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/plotly2/index.html">Food Insecurity (USA)</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <h1> Food Assistance Program Participants</h1>
+        <hr>
+        <h3> Click on the axes below to see how the graph changes </h3>
+        <h5 class = "font-italic"> Hover on a datapoint for more info</h5>
+        <br>
+        <br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12  col-md-9">
+        <div id="scatter">
+          <!-- We append our chart here. -->
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-xs-12  col-md-9">
+        <div class="article">
+          <br>
+          <br>
+          <p style = "font-size:15px"> The chart above is illustrating the percentage of a state population that participates in the following food assistance programs:
+            <ul style = "font-size:15px"> WIC – Special Supplemental Nutrition Program for Women, Infants, & Children</ul>
+            <ul style = "font-size:15px"> National School Lunch – Covers 9-month average, excludes June through August</ul>
+            <ul style = "font-size:15px">School Breakfast – Covers 9-month average, excludes June through August </ul>
+            <ul style = "font-size:15px"> Summer Food – Covers 3-month average, June through August only</ul>
+            <ul style = "font-size:15px">Child & Adult Care – Food program for children & adults receiving food assistance at childcare centers, family daycare homes, and adult-care centers</ul>
+            Please note, when selecting a year/program, the y-axis will change to fit the data charted (the axis values are not fixed). 
+          </p>
+          
+          <!-- <h2>Correlations Discovered Between Health Risks and % In Poverty, Median Age, and Median Household Income</h2>
+          <p>Poverty Level %:
+              <ul>vs. Lacks Healthcare %: There appears to be a direct relationship between the variables for the majority of states.  When the poverty level is low so is the % of the population lacking healthcare.</ul>
+              <ul>vs. Smokes %: No strong relationship between the variables.  Across multiple poverty levels, the % of the population that smokes falls between 12 & 22.  There are a handful of states where there is a direct relationship - see AL, LA, and MS.</ul>
+              <ul>vs. Obesity %: Similar to smoking, there is no strong relationship between the variables.  Across multiple poverty levels, the % of the population that is obese falls between 24 and 34.  A primary outlier however is MS, where poverty and obesity are both high.</ul> -->
+            </p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer-->
+  <div id="footer">
+    <p></p>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+
+  <script type="text/javascript" src="assets/js/app.js"></script>
+
+</body>
+
+</html>

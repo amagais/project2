@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+
+  <!--CSS Link-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!--link rel="stylesheet" href="reset.css">
+
+</head>
+
+<body>
+  <!-- Navigation Section -->
+  <div class="navigation">
+    <nav class="navbar navbar-expand-lg navbar bg-light">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler float-right border border-white" type="button"  data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Data
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="./data/national_data.html">National Data</a>
+              <a class="dropdown-item" href="./data/IL_data.html">Illinois Data</a>
+            </div>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="../index_main.html">Home</a>
+    
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/map/index.html">Food Insecurity Map (Illinois)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/D3/index.html">Food Insecurity (Illinois)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/BridgetPlot/index.html">Food Assistance Programs Participation (USA)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/plotly2/index.html">Food Insecurity (USA)</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+  
+        <!-- Left box  -->
+        
+        <div class="h1 p-3 mb-2 bg-warning text-dark">Public Health Crisis: Food Insecurity</div>
+        
+          <hr>
+          <img src="/img/pa_times_img.jpg" class="vizualization rounded float-left" alt="banana pic" style="padding-left: 50px; padding-right: 50px; padding-bottom: 20px">
+          
+          <h3 class = "font-italic" style = "color: black; padding-right: 50px">"One out of six people aren't sure there will be enough food to last for the week." - PA Times</h3>
+          <h5 style = "padding-right: 50px">There is no single face, age, or region of food insecurity, as it impacts every community in the United States.</h5>
+          <p style = "padding-right: 50px"> 
+            Food insecurity is a complex issue. This nationwide problem is exacerbated by poverty, accessibility issues, and a dearth of government assistance.
+          With the current pandemic and rising unemployment rate, the food insecurity crisis is only expected to get worse. 
+        Using data from the USDA Food Environment Atlas, we analyzed the impact of various food insecurity factors, such as low access 
+        to stores, fast food restaurant availability, and food assistance programs, both nationwide and in Illinois. </p>
+        <p style = "font-size: 10px">Image at left source: PA Times</p>
+        <hr>
+        <br>
+          <p style="padding-left: 50px;padding-right: 50px;">
+            To set a baseline, the USDA defines the ranges of food security and insecurity as: 
+            <ul>•	High food security: no reported indications of food-access problems or limitations.</ul>
+            <ul>•	Marginal food security: one or two reported indications—typically of anxiety over food sufficiency or shortage of food in the house. Little or no indication of changes in diets or food intake.</ul>
+         
+            <ul>•	Low food security: reports of reduced quality, variety, or desirability of diet. Little or no indication of reduced food intake.</ul>
+            <ul>•	Very low food security: reports of multiple indications of disrupted eating patterns and reduced food intake.</ul>
+
+          <!-- The CNSTAT panel recommended that USDA make a clear and explicit distinction between food insecurity and hunger.<br>
+          •	Food insecurity—the condition assessed in the food security survey and represented in USDA food security reports—is a household-level economic and social condition of limited or uncertain access to adequate food.<br>
+          •	Hunger is an individual-level physiological condition that may result from food insecurity.<br>
+          •	The word "hunger," the panel stated in its final report, "...should refer to a potential consequence of food insecurity that, because of prolonged, involuntary lack of food, results in discomfort, illness, weakness, or pain that goes beyond the usual uneasy sensation.<br> -->
+          </p>
+
+          <img src="/img/usda_food_security_img.png" class="vizualization rounded float-left" alt="USDA graph">
+        </div>
+      </div>
+      
+
+
+
+
+  
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
